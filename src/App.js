@@ -8,7 +8,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={<progress value=".env.PUBLIC_URL"></progress>}>
     <Naviagtion />
     <Routes>
       <Route path='/' element={<Home/>}/>
