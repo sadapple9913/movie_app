@@ -8,13 +8,12 @@ import './styles/App.css';
 
 function App() {
   return (
-    <BrowserRouter basename={<progress value=".env.PUBLIC_URL"></progress>}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Naviagtion />
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/detail' element={<Detail/>}/>
-
     </Routes>
     </BrowserRouter>
   )
