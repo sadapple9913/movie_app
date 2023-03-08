@@ -1,0 +1,18 @@
+/* Navigation.css */
+.nav{z-index: 1; position: fixed;left: 10px;top: 50px;
+background: #fff;padding: 10px 20px;border-radius: 5px;
+box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25),
+0 8px 16px -8px rgba(0,0,0,0.3),
+0 -6px 16px -6px rgba(0,0,0,0.25);
+display: flex;flex-direction: column;}
+
+.nav a{text-align:  center; text-decoration: none;color: #0008fc;
+text-transform: uppercase;font-size: 12px;font-weight: 600;}
+
+.nav a:not(:last-of-type){margin-bottom: 20px;}
+
+@media screen and(max-width: 767px){
+  .nav{width: 100%;bottom: 0;left: auto;top: auto;}
+  /* left: initial; top: initial; */
+  /* left:auto넣는이유는 기존값 삭제를 위해서 */
+}

@@ -1,0 +1,60 @@
+/* Detail.css */
+
+.detail{
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) 2fr;
+  grid-gap: 20px;
+  background: #fff;
+
+  margin: 70px;
+  font-weight: 300;
+  padding: 20px;
+  border-radius: 5px;
+  color: #adaeb9;
+  box-shadow: 0 13px 27px -5px rgba(50.50.93,0.25)
+  0 8px 16px -8px rgba(0,0,0,0.3)
+  0px -6px 16px -6px rgba(0,0,0,0.25);
+}
+
+.detail img {
+  position: relative;
+  top:-50px;
+  max-width: 400px;
+  width: 100%;
+  margin-right: 30px;
+  box-shadow: 0 13px 27px -5px rgba(50.50.93,0.25)
+  0 8px 16px -8px rgba(0,0,0,0.3)
+  0px -6px 16px -6px rgba(0,0,0,0.25);
+}
+
+.detail .detail_title,
+.detail .detail_year{
+  margin: 0;
+  font-weight: 300;
+}
+.detail .detail_title{
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #3b7ffc;
+  font-weight: bold;
+}
+
+.detail .detail_genres{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap:wrap;
+  margin: 5px 0px;
+}
+.detail .detail_year,
+.detail .detail_genres{
+  margin-right: 10px;
+  font-size: 14px;
+}
+@media screen and (max-width : 768px){
+.detail{
+  grid-template-columns: 1fr;
+  width: calc(100% - 140px);
+}  
+}
