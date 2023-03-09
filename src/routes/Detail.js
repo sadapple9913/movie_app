@@ -1,11 +1,17 @@
 import React from 'react'
-import {useLocation } from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom';
 import '../styles/Detail.css'
 
 
 function Detail() {
   const location = useLocation();//react-router-dom에서 제공하는 함수
   console.log(location);
+
+  const navigate = useNavigate();
+  if(location.state === undefined){
+    navigate('/'); //홈으로 이동 즉 리다이렉트 기능이다.
+  }
+
   const {genres,id,poster,summary,title,year} = location.state;
   return (
     <div className='detail'>
